@@ -202,7 +202,6 @@ def get_save_dir(args, name=None):
     if getattr(args, "save_dir", None):
         save_dir = args.save_dir
     else:
-        # from ultralytics.utils.files import increment_path
         from utils.files import increment_path
 
         project = args.project or Path(SETTINGS["runs_dir"]) / args.task
