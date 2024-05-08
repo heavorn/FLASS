@@ -13,9 +13,9 @@ from rec.utils.logging import get_logger
 import rec.engine.engine as program
 import numpy as np
 
-class REC_MODEL:
+class SVTR_G:
     def __init__(self, cfg, pretrain_model=None):
-        super(REC_MODEL, self).__init__()
+        super(SVTR_G, self).__init__()
         self.config = program.load_config(cfg)
         self.global_config = self.config['Global']
         self.pretrain_model = pretrain_model
@@ -32,7 +32,7 @@ class REC_MODEL:
         if self.pretrain_model is not None:
             load_pretrained_params(model, self.pretrain_model)
         
-        # Return an instance of REC_MODEL with the model loaded
+        # Return an instance of SVTR-G with the model loaded
         return model
 
     def predict(self, crop_img):
