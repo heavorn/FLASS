@@ -6,8 +6,7 @@ import torch
 import cv2
 from det.utils.plotting import Annotator, colors
 
-# from rec_model import REC_MODEL
-from rec import REC_MODEL
+from rec import SVTR_G
 from det import YOLO_SL
 
 import pdb
@@ -53,7 +52,7 @@ def _predict_img(
     img_path: str,
     det_model: YOLO_SL,
     weight_det_model: YOLO_SL,
-    rec_model: REC_MODEL,
+    rec_model: SVTR_G,
     save_dir: str,
     device: str,
     ) -> None:
@@ -202,7 +201,7 @@ def _preprocess_config(det_model_1, det_model_2, rec_model):
     print(f"✅Successfually loaded: {det_model_1} model!!!")
     weight_det_model = YOLO_SL(f'weights/{det_model_2}.pt')
     print(f"✅Successfually loaded {det_model_2} model!!!")
-    _rec_model = REC_MODEL('rec/cfg/svtr_g.yml', f'weights/{rec_model}')
+    _rec_model = SVTR_G('rec/cfg/svtr_g.yml', f'weights/{rec_model}')
     print(f"✅Successfually loaded {rec_model} model!!!\n")
 
     return det_model, weight_det_model, _rec_model
