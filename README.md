@@ -6,6 +6,8 @@ The pipeline is shown in the following figure.
 
 ![pipeline](src/flass.png)
 
+Detailed figures for each model [src-SL](src/)
+
 ## Install requirements
 
 - This work was tested with PyTorch 2.1.0, paddlepaddle 2.6.1, CUDA 12.4, python 3.10 and Ubuntu 22.04. 
@@ -20,7 +22,7 @@ The pipeline is shown in the following figure.
 
 Available model weights:
 
-| [YOLOv8-SL](weights/YOLOv8-SL.pt) |   [best_small_model](weights/SL-TD.pt)   | [best_base_model](weights/SVTR-G.pdparams) |
+| [YOLOv8-SL](weights/YOLOv8-SL.pt) |   [SL-TD](weights/SL-TD.pt)   | [SVTR-G](weights/SVTR-G.pdparams) |
 
 ## Dataset
 
