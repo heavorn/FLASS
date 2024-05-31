@@ -28,7 +28,7 @@ Unfortunately, due to dataset privacy, we cannot share either training or infere
 
 #### Notice:
 
-    - You can run inference directly on images with a size of 1920x1080 without resizing.
+- You can run inference directly on images with a size of 1920x1080 without resizing.
 
 ## Inference
 
