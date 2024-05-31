@@ -6,7 +6,7 @@ The pipeline is shown in the following figure.
 
 ![pipeline](src/flass.png)
 
-Detailed figures for each model [src-SL](src/)
+Detailed figures for each model [src](src/)
 
 ## Install requirements
 
