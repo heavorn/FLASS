@@ -233,11 +233,11 @@ if __name__ == '__main__':
 
     device = "gpu" if torch.cuda.is_available() else "cpu"
 
-    img_path = "test_img"   # Image path: can be a single image or a directory of images
+    img_path = "select_img/7058.jpg"   # Image path: can be a single image or a directory of images
     save_dir = "results"    # Directory to save the results
     os.makedirs(save_dir, exist_ok=True)
     
-    det_model, weight_det_model, rec_model = _preprocess_config('det_model-1', 'det_model-2', 'rec_model')
+    det_model, weight_det_model, rec_model = _preprocess_config('YOLOv8-SL', 'SL-TD', 'SVTR-G')
     
     main()
 
