@@ -26,7 +26,7 @@ Available model weights:
 
 ## Dataset
 
-Unfortunately, due to dataset privacy, we cannot share either training or inference testing images.
+Unfortunately, due to dataset privacy, we cannot share training and testing images.
 
 #### Notice:
 
@@ -34,9 +34,7 @@ Unfortunately, due to dataset privacy, we cannot share either training or infere
 
 ## Inference
 
-1. Create a `test_img` folder.
-
-2. Modify `img_path` in `predict.py` accordingly.
+1. Modify `img_path` in `predict.py` accordingly.
 
 ```bash
    python predict.py
